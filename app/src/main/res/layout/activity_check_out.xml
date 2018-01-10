@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE0B2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+            </android.support.design.widget.AppBarLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="78dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_saved"
+            android:descendantFocusability="afterDescendants"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Total Price:  "
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/sumPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0$ "
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="checkout"
+        android:background="#FFA726"
+        android:onClick="realCheckout"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout >

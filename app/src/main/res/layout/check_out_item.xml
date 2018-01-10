@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:elevation="8dp"
+    android:id="@+id/cv"
+    android:paddingBottom="5dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/savedImage"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:elevation="2dp"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="title"
+                android:id="@+id/savedTitle"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="title"
+                    android:id="@+id/savedPrice"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right|bottom"
+            app:srcCompat="@drawable/ic_delete_forever"
+            android:background="@drawable/shop_button"
+            android:onClick="delete"
+            android:layout_margin="20dp"
+            />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v7.widget.CardView>

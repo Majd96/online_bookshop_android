@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:elevation="8dp"
+    android:id="@+id/cv"
+    android:paddingBottom="5dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/articleImage"
+                android:scaleType="fitXY"
+                android:elevation="2dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="title"
+                android:id="@+id/title"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingRight="50dp"
+                android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="price"
+                    android:id="@+id/price"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingBottom="4dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               tools:text="subTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="desc"
+                android:id="@+id/description"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center|right|bottom"
+            android:src="@drawable/ic_plus_circle_outline"
+            tools:layout_editor_absoluteX="331dp"
+            android:elevation="6dp"
+            android:autoMirrored="true"
+           android:background="@drawable/shop_button"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v7.widget.CardView>
